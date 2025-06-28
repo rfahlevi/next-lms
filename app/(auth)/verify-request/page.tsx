@@ -1,5 +1,5 @@
-import VerifyRequest from "@/components/pages/VeirfyRequest";
 import { Suspense } from "react";
+import VerifyRequest from "./_components/VerifyRequest";
 
 const VerifyRequestPage = () => {
   return (

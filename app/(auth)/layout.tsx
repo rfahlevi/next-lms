@@ -1,9 +1,9 @@
+import Logo from "@/components/logo";
 import { buttonVariants } from "@/components/ui/button";
 import { ArrowLeftIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-import Logo from "@/public/Logo.svg";
 
 const AuthLayout = ({ children }: { children: ReactNode }) => {
   return (
@@ -20,13 +20,7 @@ const AuthLayout = ({ children }: { children: ReactNode }) => {
         Back
       </Link>
       <div className="w-full max-w-sm flex flex-col gap-6">
-        <Link
-          href="/"
-          className="flex items-center self-center gap-2 font-bold text-xl"
-        >
-          <Image src={Logo} width={36} height={36} alt="Logo" />
-          PrimeLMS.
-        </Link>
+        <Logo />
         {children}
         <div className="text-balance text-sm text-center text-muted-foreground">
           By clicking continue, you agree to our{" "}
